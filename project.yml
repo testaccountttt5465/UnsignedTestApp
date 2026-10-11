@@ -1,0 +1,21 @@
+
+name: UnsignedTestApp
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "15.0"
+targets:
+  UnsignedTestApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.example.UnsignedTestApp
+      PRODUCT_NAME: UnsignedTestApp
+      SWIFT_VERSION: "5.0"
+      TARGETED_DEVICE_FAMILY: "1,2"
+      GENERATE_INFOPLIST_FILE: YES
+      INFOPLIST_KEY_CFBundleDisplayName: "Test App"
+      INFOPLIST_KEY_UILaunchScreen_Generation: YES
+      CODE_SIGNING_ALLOWED: NO
